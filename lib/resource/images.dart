@@ -6,4 +6,5 @@ class Images {
   static const DATA_BALANCE_ICON = 'images/group-67.png';
   static const SPECIAL_PROMOS_IMAGE = 'images/group-29.png';
   static const LATEST_PROMOS_IMAGE = 'images/group-43.png';
+  static const NETFLIX = 'images/bitmap-10.png';
 }

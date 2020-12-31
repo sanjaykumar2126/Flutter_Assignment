@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/resource/images.dart';
+import 'package:flutter_app/container/Balancecardcontainer.dart';
+// import 'package:flutter_app/resource/images.dart';
 import 'package:flutter_app/resource/strings.dart';
 import 'package:flutter_app/themes/colors.dart';
-import 'package:flutter_app/widgets/common/Balance.dart';
+// import 'package:flutter_app/widgets/common/Balance.dart';
 import 'package:flutter_app/widgets/common/Recommedned.dart';
 
 
@@ -18,44 +19,46 @@ class Balancecards extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.only(left: 20, top: 20,bottom: 15),
-            child: Container(
-              height: 180,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  BalanceCard(
-                      balancetype: Strings.LOAD_BALANCE_NAME,
-                      cardimage: Images.LOAD_BALANCE_ICON,
-                      totalvalues: 'P 1675.00',
-                      validity: Strings.VALID_DATA),
-                  BalanceCard(
-                      balancetype: Strings.DATA_BALANCE_NAME,
-                      cardimage: Images.DATA_BALANCE_ICON,
-                      totalvalues: '300 MB',
-                      validity: Strings.NUMBEROFGB),
-                  BalanceCard(
-                      balancetype: Strings.LOAD_BALANCE_NAME,
-                      cardimage: Images.LOAD_BALANCE_ICON,
-                      totalvalues: 'P 1675.00',
-                      validity: Strings.VALID_DATA),
-                  BalanceCard(
-                      balancetype: Strings.DATA_BALANCE_NAME,
-                      cardimage: Images.DATA_BALANCE_ICON,
-                      totalvalues: '300 MB',
-                      validity: Strings.NUMBEROFGB),
-                  BalanceCard(
-                      balancetype: Strings.LOAD_BALANCE_NAME,
-                      cardimage: Images.LOAD_BALANCE_ICON,
-                      totalvalues: 'P 1675.00',
-                      validity: Strings.VALID_DATA),
-                  BalanceCard(
-                      balancetype: Strings.DATA_BALANCE_NAME,
-                      cardimage: Images.DATA_BALANCE_ICON,
-                      totalvalues: '300 MB',
-                      validity: Strings.NUMBEROFGB),
-                ],
-              ),
-            ),
+            child:BalanceDataContainer(),
+            // child: Container(
+            //   height: 180,
+            //   child: ListView(
+            //     scrollDirection: Axis.horizontal,
+            //     children: [
+                  
+            //       // BalanceCard(
+            //       //     balancetype: Strings.LOAD_BALANCE_NAME,
+            //       //     cardimage: Images.LOAD_BALANCE_ICON,
+            //       //     totalvalues: 'P 1675.00',
+            //       //     validity: Strings.VALID_DATA),
+            //       // BalanceCard(
+            //       //     balancetype: Strings.DATA_BALANCE_NAME,
+            //       //     cardimage: Images.DATA_BALANCE_ICON,
+            //       //     totalvalues: '300 MB',
+            //       //     validity: Strings.NUMBEROFGB),
+            //       // BalanceCard(
+            //       //     balancetype: Strings.LOAD_BALANCE_NAME,
+            //       //     cardimage: Images.LOAD_BALANCE_ICON,
+            //       //     totalvalues: 'P 1675.00',
+            //       //     validity: Strings.VALID_DATA),
+            //       // BalanceCard(
+            //       //     balancetype: Strings.DATA_BALANCE_NAME,
+            //       //     cardimage: Images.DATA_BALANCE_ICON,
+            //       //     totalvalues: '300 MB',
+            //       //     validity: Strings.NUMBEROFGB),
+            //       // BalanceCard(
+            //       //     balancetype: Strings.LOAD_BALANCE_NAME,
+            //       //     cardimage: Images.LOAD_BALANCE_ICON,
+            //       //     totalvalues: 'P 1675.00',
+            //       //     validity: Strings.VALID_DATA),
+            //       // BalanceCard(
+            //       //     balancetype: Strings.DATA_BALANCE_NAME,
+            //       //     cardimage: Images.DATA_BALANCE_ICON,
+            //       //     totalvalues: '300 MB',
+            //       //     validity: Strings.NUMBEROFGB),
+            //     ],
+            //   ),
+            // ),
           ),
           Container(
       child: Container(

@@ -1,0 +1,27 @@
+{"balance":[{"id":0,
+    "balancetype": "Load Balance",
+                  "cardimage": "images/group-65.png",
+                  "totalvalues": "P 1675.00",
+                  "validity": "Valid till 26 Dec"
+},
+{"id":1,
+    "balancetype": "Data Balance",
+                  "cardimage": "images/group-67.png",
+                  "totalvalues": "300 MB",
+                  "validity": "of 12 GB"
+},
+{"id":2,
+    "balancetype": "Load Balance",
+                  "cardimage": "images/group-65.png",
+                  "totalvalues": "P 1675.00",
+                  "validity": "Valid till 26 Dec"
+},
+{"id":3,
+    "balancetype": "Data Balance",
+                  "cardimage": "images/group-67.png",
+                  "totalvalues": "300 MB",
+                  "validity": "of 12 GB"
+}
+
+]
+}

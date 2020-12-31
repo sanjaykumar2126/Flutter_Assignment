@@ -5,6 +5,7 @@ import 'package:flutter_app/widgets/Drawer.dart';
 import 'package:flutter_app/widgets/Findoutmorebutton.dart';
 import 'package:flutter_app/widgets/GlobeRewards.dart';
 import 'package:flutter_app/widgets/Mydetails.dart';
+import 'package:flutter_app/widgets/Mysubscriptions.dart';
 import 'package:flutter_app/widgets/common/Commonheader.dart';
 import 'package:flutter_app/widgets/common/Latest_Promo.dart';
 import 'package:flutter_app/widgets/common/SpecialPromosheader.dart';
@@ -43,9 +44,9 @@ class App extends StatelessWidget {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  LatestPromos(latestpromosIcon:'images/bitmap-4.png', latestpromosname: 'SpotifyPremiu', latestpromospackage: 'Subscribe for', latestpromosvalidity: 'P 129.00', latestpromoscardimage: Images.LATEST_PROMOS_IMAGE),
+                  LatestPromos(latestpromosIcon:'images/bitmap-4.png', latestpromosname: 'SpotifyPremium', latestpromospackage: 'Subscribe for', latestpromosvalidity: 'P 129.00', latestpromoscardimage: Images.LATEST_PROMOS_IMAGE),
                   LatestPromos(latestpromosIcon:'images/bitmap-6.png', latestpromosname: 'Facebook Surf', latestpromospackage: 'Subscribe for', latestpromosvalidity: 'P 129.00', latestpromoscardimage: 'images/group-45.png'),
-                  LatestPromos(latestpromosIcon:'images/bitmap-4.png', latestpromosname: 'SpotifyPremiu', latestpromospackage: 'Subscribe for', latestpromosvalidity: 'P 129.00', latestpromoscardimage: Images.LATEST_PROMOS_IMAGE),
+                  LatestPromos(latestpromosIcon:'images/bitmap-4.png', latestpromosname: 'SpotifyPremium', latestpromospackage: 'Subscribe for', latestpromosvalidity: 'P 129.00', latestpromoscardimage: Images.LATEST_PROMOS_IMAGE),
                   LatestPromos(latestpromosIcon:'images/bitmap-6.png', latestpromosname: 'Facebook Surf', latestpromospackage: 'Subscribe for', latestpromosvalidity: 'P 129.00', latestpromoscardimage: Images.LATEST_PROMOS_IMAGE),
                 ],
               ),
@@ -54,6 +55,7 @@ class App extends StatelessWidget {
               CommonHeader(title: 'Globe Rewards'),
               GlobalRewards(),
               Findoutmore(),
+              Mysubscriptions(),
             ])
             ));
   }

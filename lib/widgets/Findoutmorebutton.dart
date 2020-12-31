@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/Profile.dart';
 class Findoutmore extends StatelessWidget {
   
   @override
@@ -11,13 +12,15 @@ class Findoutmore extends StatelessWidget {
               border: Border.all(color: Colors.black),
       borderRadius: BorderRadius.circular(8.0),
                 ),
-    child:  FlatButton(
-  onPressed: () {
-  },
-  child: Text(
-    "Find Out More",style:Theme.of(context).textTheme.subtitle2,
-  ),
-)
+    child:FlatButton(
+          child: Text('Find Out More'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Profile()),
+            );
+          },
+        ),
           );
   }
 }

@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/resource/strings.dart';
 
-class Mydetails extends StatelessWidget {
+class Mydetails extends StatefulWidget {
+  @override
+  MydetailsState createState() {
+    return new MydetailsState();
+  }
+}
+
+class MydetailsState extends State {
+  bool pressed = false;
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(20.0),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
@@ -16,7 +25,6 @@ class Mydetails extends StatelessWidget {
               ),
             ],
           ),
-          
           SizedBox(
             height: 7.0,
           ),
@@ -29,12 +37,32 @@ class Mydetails extends StatelessWidget {
                     Strings.PREPAID_NO,
                     style: Theme.of(context).textTheme.subtitle2,
                   ),
-                  Icon(Icons.keyboard_arrow_down),
+                  pressed
+                      ? FlatButton(
+                          onPressed: () {
+                            setState(() {
+                              pressed = false;
+                            });
+                          },
+                          child: Icon(Icons.keyboard_arrow_up))
+                      : FlatButton(
+                          onPressed: () {
+                            setState(() {
+                              pressed = true;
+                            });
+                          },
+                          child: Icon(Icons.keyboard_arrow_down))
                 ],
               ),
               Icon(Icons.add)
             ],
-          )
+          ),
+          pressed
+              ? Text(
+                  'Your Details Shown',
+                  style: Theme.of(context).textTheme.subtitle2,
+                )
+              : SizedBox(height: 1.0)
         ],
       ),
     );

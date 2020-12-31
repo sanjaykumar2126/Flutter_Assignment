@@ -20,7 +20,7 @@ class LatestPromos extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       // height: 270.0,
-      // width: 250.0,
+      width: 140.0,
       margin: EdgeInsets.only(top:20.0,left:20.0),
       padding: EdgeInsets.all(10.0),
             decoration: BoxDecoration(
@@ -37,7 +37,7 @@ class LatestPromos extends StatelessWidget {
                     latestpromosname,
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 18.0,
+                      fontSize: 14.0,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
