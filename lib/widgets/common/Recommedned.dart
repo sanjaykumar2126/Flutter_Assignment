@@ -11,8 +11,13 @@ class RecommendedCard extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
     return Container(
-      width: 188,
+      // width: 188,
+      width: isLandscape
+          ? MediaQuery.of(context).size.width * 0.35
+          : MediaQuery.of(context).size.width * 0.46,
       child: Card(
         color: AppColors.COLOR_BLUE,
         shape: RoundedRectangleBorder(

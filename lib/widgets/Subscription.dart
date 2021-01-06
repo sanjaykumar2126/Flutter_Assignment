@@ -15,10 +15,18 @@ class Subscription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
     return Container(
-      height: 270.0,
-      width: 140.0,
-      margin: EdgeInsets.only(top:20.0,right:20.0),
+      // height: 270.0,
+      // width: 140.0,
+      width: isLandscape
+          ? MediaQuery.of(context).size.width * 0.25
+          : MediaQuery.of(context).size.width * 0.3,
+          height: isLandscape
+          ? MediaQuery.of(context).size.height* 0.5
+          : MediaQuery.of(context).size.height* 0.35,
+      margin: EdgeInsets.only(top:10.0,right:20.0,bottom:10.0),
       padding: EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         color: colors,

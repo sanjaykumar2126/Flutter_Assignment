@@ -4,7 +4,7 @@ class CommonHeader extends StatelessWidget {
   final Shader linearGradient = LinearGradient(
     colors: <Color>[AppColors.COLOR_SAPPHIRE, AppColors.COLOR_LAVENDER_PINK],
   ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
-final String title;
+final String title;//title
 
  CommonHeader(
       {

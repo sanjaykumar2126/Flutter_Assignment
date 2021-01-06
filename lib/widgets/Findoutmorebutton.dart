@@ -3,7 +3,7 @@ import 'package:flutter_app/widgets/Profile.dart';
 class Findoutmore extends StatelessWidget {
   
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {  //Find Out More Wrapper
     return  Container(
       margin: EdgeInsets.all(20.0),
       padding: EdgeInsets.all(5.0),
@@ -12,10 +12,10 @@ class Findoutmore extends StatelessWidget {
               border: Border.all(color: Colors.black),
       borderRadius: BorderRadius.circular(8.0),
                 ),
-    child:FlatButton(
+    child:FlatButton(  
           child: Text('Find Out More'),
           onPressed: () {
-            Navigator.push(
+            Navigator.push( //Redirect to Profile Page
               context,
               MaterialPageRoute(builder: (context) => Profile()),
             );

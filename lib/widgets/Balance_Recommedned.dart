@@ -12,53 +12,15 @@ class Balancecards extends StatelessWidget {
     colors: <Color>[AppColors.COLOR_DARK_GREY, AppColors.COLOR_SHADE_GREY],
   ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {    //Balance Card and Recommended Card Wrapper
     return Container(
       color: AppColors.COLOR_LIGHT_BLUE,
       child: Column(
         children: [
           Container(
             padding: const EdgeInsets.only(left: 20, top: 20,bottom: 15),
-            child:BalanceDataContainer(),
-            // child: Container(
-            //   height: 180,
-            //   child: ListView(
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-                  
-            //       // BalanceCard(
-            //       //     balancetype: Strings.LOAD_BALANCE_NAME,
-            //       //     cardimage: Images.LOAD_BALANCE_ICON,
-            //       //     totalvalues: 'P 1675.00',
-            //       //     validity: Strings.VALID_DATA),
-            //       // BalanceCard(
-            //       //     balancetype: Strings.DATA_BALANCE_NAME,
-            //       //     cardimage: Images.DATA_BALANCE_ICON,
-            //       //     totalvalues: '300 MB',
-            //       //     validity: Strings.NUMBEROFGB),
-            //       // BalanceCard(
-            //       //     balancetype: Strings.LOAD_BALANCE_NAME,
-            //       //     cardimage: Images.LOAD_BALANCE_ICON,
-            //       //     totalvalues: 'P 1675.00',
-            //       //     validity: Strings.VALID_DATA),
-            //       // BalanceCard(
-            //       //     balancetype: Strings.DATA_BALANCE_NAME,
-            //       //     cardimage: Images.DATA_BALANCE_ICON,
-            //       //     totalvalues: '300 MB',
-            //       //     validity: Strings.NUMBEROFGB),
-            //       // BalanceCard(
-            //       //     balancetype: Strings.LOAD_BALANCE_NAME,
-            //       //     cardimage: Images.LOAD_BALANCE_ICON,
-            //       //     totalvalues: 'P 1675.00',
-            //       //     validity: Strings.VALID_DATA),
-            //       // BalanceCard(
-            //       //     balancetype: Strings.DATA_BALANCE_NAME,
-            //       //     cardimage: Images.DATA_BALANCE_ICON,
-            //       //     totalvalues: '300 MB',
-            //       //     validity: Strings.NUMBEROFGB),
-            //     ],
-            //   ),
-            // ),
+            child:BalanceDataContainer(),  //BalanceCard Services
+            
           ),
           Container(
       child: Container(

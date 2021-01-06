@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 
 class LatestPromos extends StatelessWidget {
-  final String latestpromosIcon;
-  final String latestpromosname;
-  final String latestpromospackage;
-  final String latestpromosvalidity;
-  final String latestpromoscardimage;
+  final String latestpromosIcon;//promos icon
+  final String latestpromosname;//promos name
+  final String latestpromospackage;//subscribe data
+  final String latestpromosvalidity;//promos validity data
+  final String latestpromoscardimage;//card background image
 
   LatestPromos(
       {@required this.latestpromosIcon,
@@ -18,9 +18,17 @@ class LatestPromos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
     return Container(
       // height: 270.0,
-      width: 140.0,
+      // width: 140.0,
+      width: isLandscape
+          ? MediaQuery.of(context).size.width * 0.2
+          : MediaQuery.of(context).size.width * 0.3,
+          // height: isLandscape
+          // ? MediaQuery.of(context).size.height* 0.5
+          // : MediaQuery.of(context).size.height* 0.35,
       margin: EdgeInsets.only(top:20.0,left:20.0),
       padding: EdgeInsets.all(10.0),
             decoration: BoxDecoration(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-class Profile extends StatelessWidget {
+class Profile extends StatelessWidget {//Simple Profile Page
   @override
   Widget build(BuildContext context) {
     return  Container(

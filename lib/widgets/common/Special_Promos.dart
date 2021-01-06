@@ -4,9 +4,17 @@ class SpecialPromosCard extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
     return  Container(
-      height: 170.0,
-      width: 370.0,
+      // height: 170.0,
+      // width: 370.0,
+      width: isLandscape
+          ? MediaQuery.of(context).size.width * 0.9
+          : MediaQuery.of(context).size.width * 0.9,
+          height: isLandscape
+          ? MediaQuery.of(context).size.height* 0.45
+          : MediaQuery.of(context).size.height* 0.27,
       margin: EdgeInsets.only(top:20.0),
       padding: EdgeInsets.all(25.0),
             decoration: BoxDecoration(

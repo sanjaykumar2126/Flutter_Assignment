@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Providers/logindetailsprovider.dart';
 import 'package:flutter_app/resource/strings.dart';
-
+import'package:provider/provider.dart';
 class Mydetails extends StatefulWidget {
   @override
   MydetailsState createState() {
@@ -9,9 +10,11 @@ class Mydetails extends StatefulWidget {
 }
 
 class MydetailsState extends State {
-  bool pressed = false;
+  bool pressed = false;//toggle 
   @override
   Widget build(BuildContext context) {
+     var storeDetails = Provider.of<Logindetails>(context);//provider instance
+    var email = storeDetails.loginuserdetails;//getting user details
     return Container(
       padding: const EdgeInsets.all(20.0),
       child: Column(
@@ -58,8 +61,8 @@ class MydetailsState extends State {
             ],
           ),
           pressed
-              ? Text(
-                  'Your Details Shown',
+              ? Text(email
+                  ,
                   style: Theme.of(context).textTheme.subtitle2,
                 )
               : SizedBox(height: 1.0)

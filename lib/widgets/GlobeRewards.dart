@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class GlobalRewards extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {  //Globe Rewards Wrapper
     return Container(
         // height: 170.0,
         // width: 370.0,

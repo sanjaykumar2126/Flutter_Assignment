@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class BalanceCard extends StatelessWidget {
-  final String balancetype;
-  final String cardimage;
-  final String totalvalues;
-  final String validity;
+class BalanceCard extends StatelessWidget { //balance card
+  final String balancetype;//type
+  final String cardimage;//image path
+  final String totalvalues; //data
+  final String validity;//validity data
 
   BalanceCard(
       {@required this.balancetype,
@@ -13,8 +13,16 @@ class BalanceCard extends StatelessWidget {
       @required this.validity});
   @override
   Widget build(BuildContext context) {
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
     return Container(
-      width: 176,
+      // width: 176,
+      width: isLandscape
+          ? MediaQuery.of(context).size.width * 0.3
+          : MediaQuery.of(context).size.width * 0.4,
+          height: isLandscape
+          ? MediaQuery.of(context).size.height* 0.5
+          : MediaQuery.of(context).size.height* 0.35,
       child: Card(
         margin: const EdgeInsets.only(right:18.0),
         shape: RoundedRectangleBorder(

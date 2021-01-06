@@ -4,6 +4,7 @@ import 'package:flutter_app/widgets/Profile.dart';
 class AppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+   
     return Drawer(
       child: ListView(
         children: <Widget>[
@@ -24,14 +25,14 @@ class AppDrawer extends StatelessWidget {
               
             ],
           ),
-          ListTile(
+          ListTile(  //Navigation to Profile Page
             onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => Profile()),
             );
           },
-            title: Text("Profile"),
+            title: Text("MY Profile"),
           ),
           ],
       ),

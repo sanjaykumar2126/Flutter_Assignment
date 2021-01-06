@@ -10,6 +10,8 @@ class Mysubscriptions extends StatelessWidget {
   ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
   @override
   Widget build(BuildContext context) {
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape; //for finding landscape 
     return Container(
       padding: EdgeInsets.all(25.0),
       decoration: BoxDecoration(
@@ -71,7 +73,10 @@ class Mysubscriptions extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(bottom: 2.0, top: 2.0),
-            height: 180,
+            // height: 180,
+            height: isLandscape
+          ? MediaQuery.of(context).size.height*0.6
+          : MediaQuery.of(context).size.height*0.27,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -111,7 +116,10 @@ class Mysubscriptions extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(bottom: 2.0, top: 2.0),
-            height: 180,
+            // height: 180,
+            height: isLandscape
+          ? MediaQuery.of(context).size.height*0.6
+          : MediaQuery.of(context).size.height*0.27,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -137,7 +145,10 @@ class Mysubscriptions extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(bottom: 2.0, top: 2.0),
-            height: 180,
+            // height: 180,
+            height: isLandscape
+          ? MediaQuery.of(context).size.height*0.6
+          : MediaQuery.of(context).size.height*0.27,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
